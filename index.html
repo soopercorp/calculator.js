@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Calculator.js : A simple calculator API in Node" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Calculator.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/hardikr/calculator.js">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Calculator.js</h1>
+          <h2 id="project_tagline">A simple calculator API in Node</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/hardikr/calculator.js/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/hardikr/calculator.js/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>calculator.js</h1>
+
+<p>A simple calculator API in Node</p>
+
+<p>Just visit <a href="http://hr.xen.prgmr.com:8000">http://hr.xen.prgmr.com:8000</a>, and you shall be guided toward the light.</p>
+
+<h2>Its Easy</h2>
+
+<p>All API requests are to be sent via HTTP GET.
+The methods are as defined below:</p>
+
+<ul>
+<li>
+<strong>/api/new?email=<a href="mailto:john@doe.com">john@doe.com</a></strong>  : Register for a new api Key.. It is Mandatory that you do so (though you can provide a fake email ID)!! You will be returned a JSON object with the API Key, and further instructions.</li>
+<li>
+<strong>/api/op?op=24*56&amp;key=123593293283</strong>    : Perform the operation. Only simple operations are allowed - with 2 operands and one operator in between.
+The application returns a JSON object with the result (with a HTTP 200 status Header).</li>
+</ul><p>All Errors return with an HTTP 500 Header and an explanation in plain text.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Calculator.js maintained by <a href="https://github.com/hardikr">hardikr</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
