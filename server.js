@@ -41,10 +41,10 @@ var server = http.createServer(function(req, res){
             res.write('But first, you might want to read the docs!<br/>');
             res.write('<p>All API requests are to be sent via HTTP GET.');
             res.write('<br/>The methods are as defined below: </p>');
-            res.write('<ul><li><b>/api/new?email=john@doe.com</b> &nbsp;&nbsp; :  Register for a new api Key.. It is Mandatory that you do so!!<br/>');
+            res.write('<ul><li><b>/api/new?email=john@doe.com</b> &nbsp;&nbsp; :   Register for a new api Key.. It is Mandatory that you do so (though you can provide a fake email ID)!!.<br/>');
             res.write('You will be returned a JSON object with the API Key, and further instructions')
-            res.write('<li><b>/api/op?op=24*56&key=123593293283</b> &nbsp;&nbsp; :  Perform the operation. Only simple operations are allowerd - with 2 operands and one opeator<br/>');
-            res.write('The application returns a JSON object with the result and with a 200 Header.</li></ul>');
+            res.write('<li><b>/api/op?op=24*56&key=123593293283</b> &nbsp;&nbsp; :  Perform the operation. Only Simple Operations are allowed: With 2 operands and one operator in between.<br/>');
+            res.write('The application returns a JSON object with the result (with a HTTP 200 status Header).</li></ul>');
             res.end();
             break;         
         case '/api/new':
